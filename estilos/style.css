@@ -2,8 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Albert Sans', sans-serif;
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
@@ -34,7 +32,8 @@ header{
 /*NAV__contenedor*/
 .nav-contenedor{
     height: 30px;
-    margin-top: 30px;
+    margin-top: 26px;
+
 }
 .navbar ul{
     display: flex;
@@ -44,9 +43,12 @@ header{
 
 .navbar a{
     color: #ffffff;
-    font-weight: 500;
     position: relative;
     padding: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    
 }
 .navbar a:after{
     content: "";
@@ -93,7 +95,7 @@ header{
 }
 /*BOLSA-ICON*/
 .icon-bolsa{
-    margin-top: 25px;
+    margin-top: 30px;
 }
 .icon-bolsa img{
     width: 30px;
@@ -155,6 +157,7 @@ header{
     font-size: 3.5vw;
     color: #ffffff;
     padding: 10px;
+    text-decoration: none;
 }
 .filtro{
     border-radius: 6%;
@@ -194,10 +197,6 @@ footer{
     color: #ffffff;
     border-top: solid 1px #000000;
 }
-.logo-footer{
-    position: relative;
-    left: 35px;
-}
 .contenedor-footer img{
     height: 70px;
     width: 70px;
@@ -226,6 +225,7 @@ footer{
 .contenido-de-footer a{
     color: #ffffff;
     margin-bottom: 8px;
+    text-decoration: none;
 }
 .titulo-menu{
     font-weight: 600;
@@ -272,6 +272,7 @@ footer{
 .lista-categoria a{
     margin: 8px;
     color: #2C3333;
+    text-decoration: none;
 }
 #section-productos-pagos{
     margin-bottom: 30px;
