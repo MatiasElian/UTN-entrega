@@ -11,7 +11,7 @@ header{
     width: 100%;
 }
 .contenedor-header{
-    background-color: #38adb1;
+    background-color: #E94560;
     height: 90px;
     border-bottom: solid 1px#ffffff;
     box-shadow: 1px 0 3.5px #000000;
@@ -91,7 +91,6 @@ header{
 .contenedor-icono img{
     height: 20px;
     width: 20px;
-    
 }
 /*BOLSA-ICON*/
 .icon-bolsa{
@@ -129,6 +128,7 @@ header{
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .metodos-pagos{
     text-align: center;
@@ -136,7 +136,7 @@ header{
 .metodos-pagos p{
     font-weight: 800;
     margin-bottom: 4px;
-    color: rgb(90, 89, 89);
+    color: #898e91;
     font-size: 23px;
     width: 20vw;
 }
@@ -144,24 +144,26 @@ header{
     margin-bottom: 10px;
 }
 .linea{
-    border-right: solid 2px rgb(99, 97, 97);
+    border-right: solid 2px #898e91
 }
 /*SECTION__filtro*/
 .contenedor-filtro{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 52px;
-
 }
 .contenedor-filtro .filtro a{
     font-size: 3.5vw;
-    color: #ffffff;
+    color: #E94560;
     padding: 10px;
     text-decoration: none;
 }
 .filtro{
+    box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.56);
+    border: solid 2px #E94560;
     border-radius: 6%;
-    background-color: #38adb1;
+    background-color: #ffffff;
     width: 150px;
     text-align: center;
 }
@@ -189,70 +191,56 @@ header{
     display: flex;
     justify-content: center;
 }
-/*FOOTER*/
-footer{
-    background-color: #2C3333;
-    height: 100%;
-    width: 100%;
-    color: #ffffff;
-    border-top: solid 1px #000000;
+/*FOOTER-BOOTSTRAP*/
+footer {
+    background-color: #000000;
+    font-size: 13px;
+    font-weight: bold;
+    color: #E94560;
+    border-top: solid 1px #939696;
+} 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-.contenedor-footer img{
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    margin-top: 10px;
+.link-footer-nav li{
+    margin-top: 5px;
 }
-.contenedor-footer{
-    display: flex;
-    justify-content: space-around;
+.card-text{
+    color: #898e91;
 }
-.contenido-de-footer{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-right: 200px;
-}
-.titulo-en-footer{
-    font-weight: 900;
-}
-.footer-info{
-    font-weight: 300;
-    padding-left:6px;
-    margin-top: 10px;
-}
-/*FOOTER__menu*/
-.contenido-de-footer a{
-    color: #ffffff;
-    margin-bottom: 8px;
+.links-footer a{
+    padding: 4px;
+    color: #898e91;
     text-decoration: none;
 }
-.titulo-menu{
-    font-weight: 600;
-    font-size: 25px;
+.links-footer a:hover{
+    color: #E94560;
+    cursor: pointer;
 }
-.contenedor-social img{
-    height: 40px;
-    width: 40px;
+.card{
+    padding: 2% 7%;
 }
-.contenedor-social{
-    display: flex;
-    flex-direction: column;
+.policy>div {
+    padding: 4px;
 }
+
+.heading {
+    font-family: 'Titillium Web', sans-serif;
+    color: #E94560;
+}
+
+.divider {
+    border-top: 2px solid;
+}
+/*FOOTER__menu*/
 .redes{
     display: flex;
 }
-.titulo-icono{
-    margin-top: 15px;
-    margin-left: 10px;
-}
-.contenedor-copyright{
-   display: flex;
-   background-color: #000000;
-   justify-content: center;
-}
-.copyright{
-    font-weight: 600;
+.redes img{
+    height: 34px;
+    width: 34px;
 }
 /*PRODUCTOS*/
 .contenedor-titulo-seccion{
@@ -273,10 +261,6 @@ footer{
     margin: 8px;
     color: #2C3333;
     text-decoration: none;
-}
-#section-productos-pagos{
-    margin-bottom: 30px;
-    margin-top: 30px;
 }
 /*COMO COMPRAR*/
 .imagen-como-comprar{
@@ -337,10 +321,9 @@ footer{
     padding-top: 20px;
 }
 .texto-contacto{
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 80%;
     margin-top: 15px;
+    margin:0px auto
 }
 .contenedor-formulario-contacto{
     display: flex;
