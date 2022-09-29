@@ -19,76 +19,90 @@
 
 <body>
     <!--HEADER-->
-    <header>
-        <div class="contenedor-header">
-            <div class="contenedor-header-hijo">
-                <div class="logo-contenedor" title="INICIO">
-                    <a href="index.html"><img src="img/logo.png" alt="logo"></a>
-                </div>
-                <div class="buscador-contenedor">
-                    <div class="buscador">
-                        <input type="text" placeholder="¿Que buscabas?">
-                    </div>
-                    <div class="contenedor-icono">
-                        <img src="img/iconos/search.png" alt="">
-                    </div>
-                </div>
-                <!--NAV-->
-                <div class="nav-contenedor">
-                    <nav class="navbar">
-                        <ul>
-                            <li><a href="producto/producto.html">Productos</a></li>
-                            <li><a href="compra/compra.html">Cómo comprar</a></li>
-                            <li><a href="nosotros/nosotros.html">Quiénes somos</a></li>
-                            <li><a href="contacto/contacto.html">Contacto</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="icon-bolsa">
-                    <a href="#"><img src="img/iconos/bolsa.png" alt="icono bolsa"></a>
-                </div>
-            </div>
+    <header class="contenedor-header-padre">
+        <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+        <div class="buscador-contenedor">
+            <input type="text" placeholder="¿Que buscabas?">
+            <img src="img/iconos/search.png" alt="">
+        </div>
+        <!--NAV-->
+        <div class="nav-contenedor">
+            <nav class="navbar">
+                <label for="btn-menu">
+                    <img src="img/iconos/menu.png" alt="">
+                </label>
+                <input type="checkbox" id="btn-menu" class="nav-input">
+                <ul>
+                    <li><a href="producto/producto.html">Productos</a></li>
+                    <li><a href="compra/compra.html">Cómo comprar</a></li>
+                    <li><a href="nosotros/nosotros.html">Quiénes somos</a></li>
+                    <li><a href="contacto/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="icon-bolsa">
+            <a href="#" class="icono-bolsa"><img src="img/iconos/bolsa.png" alt="icono bolsa"></a>
         </div>
     </header>
     <main>
         <!--SLIDER-->
         <section>
-            <div class="contenedor-entrada">
-                <div class="imagen-principal">
-                    <img src="img/slider/123.jpg" alt="Imagen de perro y gato">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <!--METODOS PAGO-->
-                <div class="contenedor-metodos-pagos">
-                    <div class="metodos-pagos">
-                        <img src="img/iconos/entrega.png" alt="icono de entrega">
-                        <p>Envíos a todo el país</p>
+                <div class="carousel-inner rounded-3 ">
+                    <div class="carousel-item active">
+                        <img src="img/slider/123.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="linea">
+                    <div class="carousel-item">
+                        <img src="img/slider/123.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="metodos-pagos">
-                        <img src="img/iconos/tarjeta.png" alt="icono de tarjeta">
-                        <p class="tarjeta">Hasta 12 cuotas</p>
+                    <div class="carousel-item">
+                        <img src="img/slider/123.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="linea">
-                    </div>
-                    <div class="metodos-pagos">
-                        <img src="img/iconos/altacalidad.png" alt="icono de calidad">
-                        <p>Productos de alta calidad</p>
-                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!--METODOS PAGO-->
+            <div class="contenedor-metodos-pagos">
+                <div class="metodos-pagos">
+                    <img src="img/iconos/entrega.png" alt="icono de entrega">
+                    <p>Envíos a todo el país</p>
+                </div>
+                <div class="linea">
+                </div>
+                <div class="metodos-pagos">
+                    <img src="img/iconos/tarjeta.png" alt="icono de tarjeta">
+                    <p class="tarjeta">Hasta 12 cuotas</p>
+                </div>
+                <div class="linea">
+                </div>
+                <div class="metodos-pagos">
+                    <img src="img/iconos/altacalidad.png" alt="icono de calidad">
+                    <p>Productos de alta calidad</p>
                 </div>
             </div>
         </section>
         <section>
             <div class="contenedor-filtro">
-                <div class="filtro">
-                    <a href="#">Perro</a>
-                </div>
-                <div class="filtro">
-                    <a href="#">Gato</a>
-                </div>
-                <div class="filtro">
-                    <a href="#">Otros</a>
-                </div>
+                <a href="#">Perro</a>
+                <a href="#">Gato</a>
+                <a href="#">Otros</a>
             </div>
             <!--PRODUCTOS-->
             <div class="contenedor-imagenes">
@@ -182,67 +196,63 @@
                     <h4>$0</h4>
                     <button class="boton-add">Comprar</button>
                 </div>
-                <div class="contenedor-productos">
-                    <h3>nombre</h3>
-                    <img src="img/poncho/poncho3.jpg" alt="">
-                    <h4>$0</h4>
-                    <button class="boton-add">Comprar</button>
-                </div>
             </div>
         </section>
     </main>
     <!--FOOTER-->
     <footer>
-        <div>
-            <div class="card bg-white rounded-0 border-0">
-                <div class="row mb-4">
-                    <div class="col-md-4 col-sm-4 col-xs-4">
-                        <div class="footer-text pull-left">
-                            <div class="d-flex">
-                                <h1 style="color: #E94560">Kyut</h1>
-                            </div>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi non pariatur numquam animi nam at impedit odit nisi.</p>
+        <div class="card bg-white rounded-0 border-0">
+            <div class="row mb-4">
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                    <div class="footer-text pull-left">
+                        <div class="d-flex">
+                            <h1 style="color: #E94560">Kyut</h1>
                         </div>
-                    </div>
-                    <div class="col-md-2 col-sm-2 col-xs-2"></div>
-                    <div class="col-md-2 col-sm-2 col-xs-2">
-                        <h5 class="heading">Menú</h5>
-                        <ul class="links-footer link-footer-nav">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="compra/compra.html">Cómo comprar</a></li>
-                            <li><a href="producto/producto.html">Productos</a></li>
-                            <li><a href="nosotros/nosotros.html">Quiénes somos</a></li>
-                            <li><a href="contacto/contacto.html">Contacto</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2 col-sm-2 col-xs-2 offset-md-1">
-                        <h5 class="heading">Síguenos</h5>
-                        <ul class="links-footer">
-                            <div class="redes">
-                                <a href="https://www.facebook.com/" target="_blank"><img src="img/iconos/facebook.png">Facebook</a>
-                            </div>
-                            <div class="redes">
-                                <a href="https://www.instagram.com/" target="_blank"><img src="img/iconos/instagram.png">Instagram</a>
-                            </div>
-                            <div class="redes">
-                                <a href="https://web.whatsapp.com/" target="_blank"><img src="img/iconos/whatsapp.png">Whatsapp</a>
-                            </div>
-                        </ul>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi non
+                            pariatur numquam animi nam at impedit odit nisi.</p>
                     </div>
                 </div>
-                <div class="divider mb-4"> </div>
-                <div class="row" style="font-size:10px;">
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        <div class="pull-left">
-                            <p><i class="fa fa-copyright"></i> 2020 KyutOfficial</p>
+                <div class="col-md-2 col-sm-2 col-xs-2"></div>
+                <div class="col-md-2 col-sm-2 col-xs-2 titulo">
+                    <h5 class="heading">Menú</h5>
+                    <ul class="links-footer link-footer-nav">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="compra/compra.html">Cómo comprar</a></li>
+                        <li><a href="producto/producto.html">Productos</a></li>
+                        <li><a href="nosotros/nosotros.html">Quiénes somos</a></li>
+                        <li><a href="contacto/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2 offset-md-1 titulo">
+                    <h5 class="heading">Síguenos</h5>
+                    <ul class="links-footer">
+                        <div class="redes">
+                            <a href="https://www.facebook.com/" target="_blank"><img
+                                    src="img/iconos/facebook.png">Facebook</a>
                         </div>
+                        <div class="redes">
+                            <a href="https://www.instagram.com/" target="_blank"><img
+                                    src="img/iconos/instagram.png">Instagram</a>
+                        </div>
+                        <div class="redes">
+                            <a href="https://web.whatsapp.com/" target="_blank"><img
+                                    src="img/iconos/whatsapp.png">Whatsapp</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="divider mb-4"> </div>
+            <div class="row" style="font-size:10px;">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="pull-left">
+                        <p><i class="fa fa-copyright"></i> 2022 KyutOfficial</p>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        <div class="pull-right mr-4 d-flex policy">
-                            <div>Terms of Use</div>
-                            <div>Privacy Policy</div>
-                            <div>Cookie Policy</div>
-                        </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="pull-right mr-4 d-flex policy">
+                        <div>Terms of Use</div>
+                        <div>Privacy Policy</div>
+                        <div>Cookie Policy</div>
                     </div>
                 </div>
             </div>

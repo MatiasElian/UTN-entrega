@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!--CSS-->
-        <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/style.css">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,123 +21,143 @@
 </head>
 
 <body>
-    <header>
-        <div class="contenedor-header">
-            <div class="contenedor-header-hijo">
-                <div class="logo-contenedor" title="INICIO">
-                    <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
-                </div>
-                <div class="buscador-contenedor">
-                    <div class="buscador">
-                        <input type="text" placeholder="¿Que buscabas?">
-                    </div>
-                    <div class="contenedor-icono">
-                        <img src="../img/iconos/search.png" alt="">
-                    </div>
-                </div>
-                <!--NAV-->
-                <div class="nav-contenedor">
-                    <nav class="navbar">
-                        <ul>
-                            <li><a href="../producto/producto.html">Productos</a></li>
-                            <li><a href="../compra/compra.html">Cómo comprar</a></li>
-                            <li><a href="../nosotros/nosotros.html">Quiénes somos</a></li>
-                            <li><a href="../contacto/contacto.html">Contacto</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="icon-bolsa">
-                    <a href="#"><img src="../img/iconos/bolsa.png" alt="icono bolsa"></a>
-                </div>
-            </div>
+    <!--HEADER-->
+    <header class="contenedor-header-padre">
+        <a href="../index.html"><img src="../img/logo.png" alt="logo" class="logo"></a>
+        <div class="buscador-contenedor">
+            <input type="text" placeholder="¿Que buscabas?">
+            <img src="../img/iconos/search.png" alt="">
+        </div>
+        <!--NAV-->
+        <div class="nav-contenedor">
+            <nav class="navbar">
+                <label for="btn-menu">
+                    <img src="../img/iconos/menu.png" alt="">
+                </label>
+                <input type="checkbox" id="btn-menu" class="nav-input">
+                <ul>
+                    <li><a href="../producto/producto.html">Productos</a></li>
+                    <li><a href="../compra/compra.html">Cómo comprar</a></li>
+                    <li><a href="../nosotros/nosotros.html">Quiénes somos</a></li>
+                    <li><a href="../contacto/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="icon-bolsa">
+            <a href="#" class="icono-bolsa"><img src="../img/iconos/bolsa.png" alt="icono bolsa"></a>
         </div>
     </header>
     <main>
-        <section>
-            <div>
-                <div class="contenedor-titulo-seccion">
-                    <div class="titulo-seccion">
-                        <h2>Inicio/Cómo comprar</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="imagen-como-comprar">
+        <div class="contenedor-titulo-seccion">
+            <h2>Inicio/Cómo comprar</h2>
+        </div>
+        <section class="como-comprar">
                 <img src="../img/slider/como-comprar.jpg" alt="">
-            </div>
             <div class="como-compra-lista">
                 <ol type="1">
-                    <li><p id="123">Elige los productos que deseas comprar</p></li>
-                    <li><p>Haz clic en el botón de "Agregar al carrito". Esto agregará el producto a tu carrito y te llevará al mismo. En el carrito puedes modificar las cantidades de los productos seleccionados.
-                    </p></li>
-                    <li><p>Puedes seguir agregando otros productos al carrito o sino haz clic en "Iniciar Compra".</p></li>
-                    <li><p>Completa tus datos de contacto y haz clic en "Continuar".</p></li>
-                    <li><p>Ingresa la dirección a donde deseas recibir el producto. Luego haz clic en "Continuar".</p></li>
-                    <li><p>Selecciona el método de envío que desees y haz clic en "Continuar".</p></li>
-                    <li><p>Elige el medio de pago. Luego haz clic en "Continuar".</p></li>
-                    <li><p>Finalmente en la página de Confirmación de compra puedes revisar toda la información de la compra. Luego haz clic en "Continuar".</p></li>
-                    <li><p>Después de confirmar la compra recibirás un correo de nuestra parte, ese no será un comprobante de pago.</p></li>
-                    <li><p>Nosotros recibimos orden de compra y preparamos tu pedido. Una vez que esté listo nos contactaremos con Ud. para coordinar la entrega y el pago.</p></li>
-                    <li><p>Una vez acreditado el pago, haremos el envío correspondiente de los productos que hayas comprado.</p></li>
+                    <li>
+                        <p id="123">Elige los productos que deseas comprar</p>
+                    </li>
+                    <li>
+                        <p>Haz clic en el botón de "Agregar al carrito". Esto agregará el producto a tu carrito y te
+                            llevará al mismo. En el carrito puedes modificar las cantidades de los productos
+                            seleccionados.
+                        </p>
+                    </li>
+                    <li>
+                        <p>Puedes seguir agregando otros productos al carrito o sino haz clic en "Iniciar Compra".</p>
+                    </li>
+                    <li>
+                        <p>Completa tus datos de contacto y haz clic en "Continuar".</p>
+                    </li>
+                    <li>
+                        <p>Ingresa la dirección a donde deseas recibir el producto. Luego haz clic en "Continuar".</p>
+                    </li>
+                    <li>
+                        <p>Selecciona el método de envío que desees y haz clic en "Continuar".</p>
+                    </li>
+                    <li>
+                        <p>Elige el medio de pago. Luego haz clic en "Continuar".</p>
+                    </li>
+                    <li>
+                        <p>Finalmente en la página de Confirmación de compra puedes revisar toda la información de la
+                            compra. Luego haz clic en "Continuar".</p>
+                    </li>
+                    <li>
+                        <p>Después de confirmar la compra recibirás un correo de nuestra parte, ese no será un
+                            comprobante de pago.</p>
+                    </li>
+                    <li>
+                        <p>Nosotros recibimos orden de compra y preparamos tu pedido. Una vez que esté listo nos
+                            contactaremos con Ud. para coordinar la entrega y el pago.</p>
+                    </li>
+                    <li>
+                        <p>Una vez acreditado el pago, haremos el envío correspondiente de los productos que hayas
+                            comprado.</p>
+                    </li>
                 </ol>
             </div>
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/jjDD8obGzlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jjDD8obGzlY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </section>
     </main>
     <footer>
-        <div>
-            <div class="card bg-white rounded-0 border-0">
-                <div class="row mb-4">
-                    <div class="col-md-4 col-sm-4 col-xs-4">
-                        <div class="footer-text pull-left">
-                            <div class="d-flex">
-                                <h1 style="color: #E94560">Kyut</h1>
-                            </div>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi non pariatur numquam animi nam at impedit odit nisi.</p>
+        <div class="card bg-white rounded-0 border-0">
+            <div class="row mb-4">
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                    <div class="footer-text pull-left">
+                        <div class="d-flex">
+                            <h1 style="color: #E94560">Kyut</h1>
                         </div>
-                    </div>
-                    <div class="col-md-2 col-sm-2 col-xs-2"></div>
-                    <div class="col-md-2 col-sm-2 col-xs-2">
-                        <h5 class="heading">Menú</h5>
-                        <ul class="links-footer link-footer-nav">
-                            <li><a href="../index.html">Inicio</a></li>
-                            <li><a href="../compra/compra.html">Cómo comprar</a></li>
-                            <li><a href="../producto/producto.html">Productos</a></li>
-                            <li><a href="../nosotros/nosotros.html">Quiénes somos</a></li>
-                            <li><a href="../contacto/contacto.html">Contacto</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2 col-sm-2 col-xs-2 offset-md-1">
-                        <h5 class="heading">Síguenos</h5>
-                        <ul class="links-footer">
-                            <div class="redes">
-                                <a href="https://www.facebook.com/" target="_blank"><img src="../img/iconos/facebook.png">Facebook</a>
-                            </div>
-                            <div class="redes">
-                                <a href="https://www.instagram.com/" target="_blank"><img src="../img/iconos/instagram.png">Instagram</a>
-                            </div>
-                            <div class="redes">
-                                <a href="https://web.whatsapp.com/" target="_blank"><img src="../img/iconos/whatsapp.png">Whatsapp</a>
-                            </div>
-                        </ul>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi non
+                            pariatur numquam animi nam at impedit odit nisi.</p>
                     </div>
                 </div>
-                <div class="divider mb-4"> </div>
-                <div class="row" style="font-size:10px;">
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        <div class="pull-left">
-                            <p><i class="fa fa-copyright"></i> 2020 KyutOfficial</p>
+                <div class="col-md-2 col-sm-2 col-xs-2"></div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <h5 class="heading">Menú</h5>
+                    <ul class="links-footer link-footer-nav">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="compra/compra.html">Cómo comprar</a></li>
+                        <li><a href="producto/producto.html">Productos</a></li>
+                        <li><a href="nosotros/nosotros.html">Quiénes somos</a></li>
+                        <li><a href="contacto/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2 offset-md-1">
+                    <h5 class="heading">Síguenos</h5>
+                    <ul class="links-footer">
+                        <div class="redes">
+                            <a href="https://www.facebook.com/" target="_blank"><img
+                                    src="../img/iconos/facebook.png">Facebook</a>
                         </div>
+                        <div class="redes">
+                            <a href="https://www.instagram.com/" target="_blank"><img
+                                    src="../img/iconos/instagram.png">Instagram</a>
+                        </div>
+                        <div class="redes">
+                            <a href="https://web.whatsapp.com/" target="_blank"><img
+                                    src="../img/iconos/whatsapp.png">Whatsapp</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="divider mb-4"> </div>
+            <div class="row" style="font-size:10px;">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="pull-left">
+                        <p><i class="fa fa-copyright"></i> 2022 KyutOfficial</p>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        <div class="pull-right mr-4 d-flex policy">
-                            <div>Terms of Use</div>
-                            <div>Privacy Policy</div>
-                            <div>Cookie Policy</div>
-                        </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="pull-right mr-4 d-flex policy">
+                        <div>Terms of Use</div>
+                        <div>Privacy Policy</div>
+                        <div>Cookie Policy</div>
                     </div>
                 </div>
             </div>
