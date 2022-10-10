@@ -34,10 +34,11 @@
                 </label>
                 <input type="checkbox" id="btn-menu" class="nav-input">
                 <ul>
-                    <li><a href="../producto/producto.html">Productos</a></li>
-                    <li><a href="../compra/compra.html">Cómo comprar</a></li>
-                    <li><a href="../nosotros/nosotros.html">Quiénes somos</a></li>
-                    <li><a href="../contacto/contacto.html">Contacto</a></li>
+                    <li><a href="producto.html">Productos</a></li>
+                    <li><a href="compra.html">Cómo comprar</a></li>
+                    <li><a href="nosotros.html">Quiénes somos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <a href="#" class="icono-bolsa-responsive"><img src="../img/iconos/bolsa.png" alt="icono bolsa"></a>
                 </ul>
             </nav>
         </div>
@@ -50,120 +51,137 @@
             <h2>Inicio/Productos</h2>
         </div>
         <section class="section-producto">
-            <h1>Categorías</h1>
             <div class="compra-wrapper">
-                <div class="control-group">
-                    <label class="control control-radio">
-                        First radio
-                        <input type="radio" name="radio" />
-                        <div class="control_indicator"></div>
-                    </label>
-                    <label class="control control-radio">
-                        Second radio
-                        <input type="radio" name="radio" />
-                        <div class="control_indicator"></div>
-                    </label>
-                    <label class="control control-radio">
-                        third radio
-                        <input type="radio" name="radio" />
-                        <div class="control_indicator"></div>
-                    </label>
-                    <label class="control control-radio">
-                        fourth radio
-                        <input type="radio" name="radio" />
-                        <div class="control_indicator"></div>
-                    </label>
+                <div class="container-filter">
+                    <h1>Categorías</h1>
+                    <div class="container-select">
+                        <select name="filtro">
+                            <option selected>--Selecciona--</option>
+                            <option value="">Libretas</option>
+                            <option value="">Ponchos</option>
+                            <option value="">Collares</option>
+                            <option value="">Lapiceras</option>
+                            <option value="">Llaveros</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label class="control control-radio">
+                            Libretas
+                            <input type="radio" name="radio" />
+                            <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-radio">
+                            Ponchos
+                            <input type="radio" name="radio" />
+                            <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-radio">
+                            Collares
+                            <input type="radio" name="radio" />
+                            <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-radio">
+                            Lapiceras
+                            <input type="radio" name="radio" />
+                            <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-radio">
+                            Llaveros
+                            <input type="radio" name="radio" />
+                            <div class="control_indicator"></div>
+                        </label>
+                    </div>
                 </div>
-                <div class="contenedor-imagenes producto-html">
+                <div class="contenedor-imagenes producto-html"> 
                     <div class="contenedor-productos">
+                        <a href="vistacompra.html"><img src="../img/libreta/libretagato/libretagato1.jpg"></a>
                         <h3>nombre</h3>
-                        <img src="../img/libreta/libretagato/libretagato1.jpg">
-                        <h4>$0</h4>
-                        <button class="boton-add">Comprar</button>
+                        <span>$100</span>
+                        <button class="boton-add">Agregar al Carrito</button>
                     </div>
                     <div class="contenedor-productos">
+                        <a href="vistacompra.html"><img src="../img/libreta/libretagato/libretagato5.jpg"></a>
                         <h3>nombre</h3>
-                        <img src="../img/libreta/libretagato/libretagato5.jpg">
-                        <h4>$0</h4>
-                        <button class="boton-add">Comprar</button>
+                        <span>$100</span>
+                        <button class="boton-add">Agregar al Carrito</button>
                     </div>
                     <div class="contenedor-productos">
+                        <a href="vistacompra.html"><img src="../img/libreta/libretagato/libretagato6.jpg"></a>
                         <h3>nombre</h3>
-                        <img src="../img/libreta/libretagato/libretagato6.jpg">
-                        <h4>$0</h4>
-                        <button class="boton-add">Comprar</button>
+                        <span>$100</span>
+                        <button class="boton-add">Agregar al Carrito</button>
                     </div>
                     <div class="contenedor-productos">
+                        <a href="vistacompra.html"><img src="../img/libreta/libretagato/libretagato11.jpg"></a>
                         <h3>nombre</h3>
-                        <img src="../img/libreta/libretagato/libretagato11.jpg">
-                        <h4>$0</h4>
-                        <button class="boton-add">Comprar</button>
+                        <span>$100</span>
+                        <button class="boton-add">Agregar al Carrito</button>
                     </div>
                     <div class="contenedor-productos">
+                        <a href="vistacompra.html"><img src="../img/collares/collaresgato/collar.jpg"></a>
                         <h3>nombre</h3>
-                        <img src="../img/collares/collaresgato/collar.jpg">
-                        <h4>$0</h4>
-                        <button class="boton-add">Comprar</button>
+                        <span>$100</span>
+                        <button class="boton-add">Agregar al Carrito</button>
                     </div>
                     <div class="contenedor-productos">
+                        <a href="vistacompra.html"><img src="../img/collares/collaresgato/collar2.jpg"></a>
                         <h3>nombre</h3>
-                        <img src="../img/collares/collaresgato/collar2.jpg">
-                        <h4>$0</h4>
-                        <button class="boton-add">Comprar</button>
+                        <span>$100</span>
+                        <button class="boton-add">Agregar al Carrito</button>
                     </div>
                     <div class="contenedor-productos">
+                        <a href="vistacompra.html"><img src="../img/otros/lapicera.jpg"></a>
                         <h3>nombre</h3>
-                        <img src="../img/otros/lapicera.jpg">
-                        <h4>$0</h4>
-                        <button class="boton-add">Comprar</button>
+                        <span>$100</span>
+                        <button class="boton-add">Agregar al Carrito</button>
                     </div>
                     <div class="contenedor-productos">
+                        <a href="vistacompra.html"><img src="../img/otros/lapicera1.jpg"></a>
                         <h3>nombre</h3>
-                        <img src="../img/otros/lapicera1.jpg">
-                        <h4>$0</h4>
-                        <button class="boton-add">Comprar</button>
+                        <span>$100</span>
+                        <button class="boton-add">Agregar al Carrito</button>
                     </div>
                     <div class="contenedor-productos">
+                        <a href="vistacompra.html"><img src="../img/otros/lapicera2.jpg"></a>
                         <h3>nombre</h3>
-                        <img src="../img/otros/lapicera2.jpg">
-                        <h4>$0</h4>
-                        <button class="boton-add">Comprar</button>
+                        <span>$100</span>
+                        <button class="boton-add">Agregar al Carrito</button>
                     </div>
                     <div class="contenedor-productos">
+                        <a href="vistacompra.html"><img src="../img/otros/llavero.jpg"></a>
                         <h3>nombre</h3>
-                        <img src="../img/otros/llavero.jpg">
-                        <h4>$0</h4>
-                        <button class="boton-add">Comprar</button>
+                        <span>$100</span>
+                        <button class="boton-add">Agregar al Carrito</button>
                     </div>
                     <div class="contenedor-productos">
+                        <a href="vistacompra.html"><img src="../img/otros/llavero1.jpg"></a>
                         <h3>nombre</h3>
-                        <img src="../img/otros/llavero1.jpg">
-                        <h4>$0</h4>
-                        <button class="boton-add">Comprar</button>
+                        <span>$100</span>
+                        <button class="boton-add">Agregar al Carrito</button>
                     </div>
                     <div class="contenedor-productos">
+                        <a href="vistacompra.html"><img src="../img/otros/llavero4.jpg"></a>
                         <h3>nombre</h3>
-                        <img src="../img/otros/llavero4.jpg">
-                        <h4>$0</h4>
-                        <button class="boton-add">Comprar</button>
+                        <span>$100</span>
+                        <button class="boton-add">Agregar al Carrito</button>
                     </div>
                     <div class="contenedor-productos">
+                        <a href="vistacompra.html"><img src="../img/poncho/poncho.jpg"></a>
                         <h3>nombre</h3>
-                        <img src="../img/poncho/poncho.jpg">
-                        <h4>$0</h4>
-                        <button class="boton-add">Comprar</button>
+                        <span>$100</span>
+                        <button class="boton-add">Agregar al Carrito</button>
                     </div>
                     <div class="contenedor-productos">
+                        <a href="vistacompra.html"><img src="../img/poncho/poncho1.jpg"></a>
                         <h3>nombre</h3>
-                        <img src="../img/poncho/poncho1.jpg">
-                        <h4>$0</h4>
-                        <button class="boton-add">Comprar</button>
+                        <span>$100</span>
+                        <button class="boton-add">Agregar al Carrito</button>
                     </div>
                     <div class="contenedor-productos">
+                        <a href="vistacompra.html"><img src="../img/poncho/poncho2.jpg"></a>
                         <h3>nombre</h3>
-                        <img src="../img/poncho/poncho2.jpg">
-                        <h4>$0</h4>
-                        <button class="boton-add">Comprar</button>
+                        <span>$100</span>
+                        <button class="boton-add">Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
@@ -197,19 +215,18 @@
                         <div class="d-flex">
                             <h1 style="color: #E94560">Kyut</h1>
                         </div>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi non
-                            pariatur numquam animi nam at impedit odit nisi.</p>
+                        <p class="card-text">Somos una empresa con más de 20 años de trayectoria, ofreciendo lo mejor y más novedoso en productos para vos y tu mascota. Contamos con un equipo de trabajo profesional, guiados por nuestros valores fundantes: satisfacción al cliente, compromiso, mejora continua y eficacia.</p>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2"></div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
+                <div class="col-md-2 col-sm-2 col-xs-2 link-footer-producto">
                     <h5 class="heading">Menú</h5>
-                    <ul class="links-footer link-footer-nav">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="compra/compra.html">Cómo comprar</a></li>
-                        <li><a href="producto/producto.html">Productos</a></li>
-                        <li><a href="nosotros/nosotros.html">Quiénes somos</a></li>
-                        <li><a href="contacto/contacto.html">Contacto</a></li>
+                    <ul class="links-footer link-footer-nav ">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="compra.html">Cómo comprar</a></li>
+                        <li><a href="producto.html">Productos</a></li>
+                        <li><a href="nosotros.html">Quiénes somos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-2 offset-md-1">
