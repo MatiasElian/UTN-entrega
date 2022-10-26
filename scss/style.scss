@@ -51,6 +51,19 @@
 		margin-top: 5px;
 		box-shadow: -3px 1px 3px 2px rgba(0, 0, 0, 0.2);
 	}
+	.contenedor-carrito{
+		background-color: white;
+		width: 52px;
+		height: 52px;
+		margin-top: 20px;
+		border-radius: 30px;
+		opacity: 0.8;
+		margin-right: 10px;
+		&:hover {
+			opacity: 1;
+			transition: all 0.3s;
+		}
+	}
 }
 .nav-contenedor {
 	margin-top: 26px;
@@ -124,23 +137,26 @@ label {
 	input {
 		height: 37px;
 		width: 320px;
-		border-radius: 10px 10px 10px 10px;
-		padding-left: 10px;
+		border-radius: 10px;
+		padding-left: 43px;
 		outline: none;
+		border: none;
 	}
 	img {
 		width: 20px;
 		position: relative;
 		display: block;
-		bottom: 27px;
-		right: 25px;
+		bottom: 28px;
+		right: -8px;
 	}
 }
-.icono-bolsa {
+.icono-carrito {
 	img {
-		margin-top: 30px;
-		width: 30px;
+		width: 32px;
 		height: 30px;
+		margin: auto;
+		display: flex;
+		margin-top: 11px;
 	}
 }
 .contenedor-metodos-pagos {
@@ -322,6 +338,7 @@ ul {
 		display: flex;
 		flex-direction: column;
 		margin-top: 20px;
+		color: white;
 	}
 }
 .compra-wrapper {
@@ -343,10 +360,11 @@ ul {
 	display: block;
 	position: relative;
 	padding-left: 34px;
-	margin-bottom: 17px;
+	margin-bottom: 14px;
 	padding-top: 0px;
 	cursor: pointer;
 	font-size: 16px;
+	height: 25px;
 	input {
 		position: absolute;
 		z-index: -1;
@@ -421,6 +439,19 @@ ul {
 	}
 }
 .control-radio {
+	h5{
+		font-size: 18px;
+		width: 103px;
+		padding-top: 2px;
+		height: 25px;
+		padding-left: 5px;
+		&:hover{
+			transition: 0.3s;
+			background-color: #E94560;
+			border-radius: 4px;
+			color: white;
+		}
+	}
 	.control_indicator {
 		border-radius: 50%;
 		&:after {
@@ -495,9 +526,13 @@ ul {
 		margin-top: 16px;
 		margin-left: 70px;
 		font-size: 20px;
+		color: #3C4048;
 	}
 	li {
 		margin-bottom: 10px;
+		p{
+			color: #3C4048;
+		}
 	}
 }
 .video {
@@ -522,7 +557,7 @@ ul {
 		padding-left: 100px;
 		padding-right: 100px;
 		font-size: 25px;
-		color: #f83e5d;
+		color: #3C4048;
 	}
 }
 .container-contacto {
@@ -538,7 +573,7 @@ ul {
 		width: 80%;
 		margin-top: 15px;
 		margin: 0px auto;
-		color: #f83e5d;
+		color: #3C4048;
 		font-size: 18px;
 	}
 }
@@ -640,7 +675,7 @@ ul {
 	width: 99%;
 	display: flex;
 	justify-content: center;
-	margin-bottom: 100px;
+	margin-bottom: 75px;
 	margin-top: 20px;
 }
 .container-image-vistacompra {
@@ -754,6 +789,54 @@ ul {
 	height: 50px;
 	font-size: 18px;
 }
+.division{
+	border-bottom: solid 1px #b8bfc4;
+	width: 89%;
+	margin: auto;
+	margin-bottom: 20px;
+}
+.container-question{
+	width: 90%;
+	margin: auto;
+	padding: 10px 10px 15px;
+	margin-bottom: 40px;
+	h3{
+		font-size: 22px;
+	}
+	.send-question{
+		display: flex;
+	}
+	button{
+		margin: auto;
+		margin-left: 8px;
+		width: 150px;
+		border-radius: 6px;
+		font-size: 20px;
+		font-weight: 500;
+		background-color: #e02242;
+		border: solid 1px #e02242;
+		height: 55px;
+		color: white;
+	}
+	textarea{
+		width: 100%;
+		height: 70px;
+		resize: none;
+		padding-top: 5px;
+		padding-left: 12px;
+		font-size: 16px;
+		border: solid 1px rgb(68, 68, 68);
+		border-radius: 6px;
+		outline: none;
+		
+		&:focus{
+			border: solid 2px #e02242;
+			padding-top: 4px;
+			padding-left: 11px;
+		}
+	}
+}
+
 @media screen and (max-width:1260px) {
 	.contenedor-titulo-seccion {
 		padding-top: 16px;
@@ -831,18 +914,6 @@ ul {
 			height: 35px;
 		}
 	}
-	.icono-bolsa {
-		img {
-			width: 26px;
-			height: 26px;
-			margin-top: 34px;
-			margin-right: 20px;
-			width: 26px;
-			height: 26px;
-			margin-top: 34px;
-			margin-right: 20px;
-		}
-	}
 	.navbar {
 		a {
 			font-size: 17.5px;
@@ -855,6 +926,7 @@ ul {
 		input {
 			width: 235px;
 			height: 33px;
+			padding: 10px;
 		}
 		img {
 			display: none;
@@ -927,14 +999,29 @@ ul {
 		ul {
 			width: 400px;
 			margin-left: 14px;
+			li{
+				margin-right: 12px;
+			}
 		}
 		a {
 			white-space: nowrap;
 			font-size: 14px;
 		}
 	}
-	.icono-bolsa {
+	.icono-carrito{
 		margin-left: 4px;
+	}
+	.contenedor-header-padre{
+		.contenedor-carrito{
+			width: 46px;
+			height: 46px;
+			margin-left: 10px;
+			margin-top: 24px;
+			.icono-carrito img{
+				width: 26px;
+				height: 26px;
+			}
+		}
 	}
 	.links-footer {
 		a {
@@ -974,6 +1061,7 @@ ul {
 			option {
 				color: white;
 				font-size: 20px;
+
 			}
 		}
 	}
@@ -1010,11 +1098,11 @@ ul {
 			width: 100%;
 			text-align: center;
 			margin: auto;
-			padding-bottom: 30px;
+			padding-bottom: 42px;
 			margin-top: 30px;
 		}
 		a {
-			font-size: 40px;
+			font-size: 30px;
 		}
 	}
 	.nav-input {
@@ -1034,10 +1122,10 @@ ul {
 			height: 50px;
 		}
 	}
-	.icon-bolsa {
+	.contenedor-carrito {
 		display: none;
 	}
-	.icono-bolsa-responsive {
+	.icono-carrito-responsive {
 		margin: auto;
 		img {
 			width: 50px;
@@ -1062,6 +1150,21 @@ ul {
 			display: none;
 		}
 	}
+	.button-send{
+		display: none;
+	}
+	.send-question{
+		a{
+			margin: auto;
+			.icon-send{
+				margin: auto;
+				margin-left: 8px;
+				width: 52px;
+				height: 52px;
+			}
+		}
+		
+	}
 }
 @media screen and (min-width:821px) {
 	header {
@@ -1069,7 +1172,10 @@ ul {
 			display: none;
 		}
 	}
-	.icono-bolsa-responsive {
+	.icono-carrito-responsive {
+		display: none;
+	}
+	.icon-send{
 		display: none;
 	}
 }
@@ -1080,7 +1186,7 @@ ul {
 	.navbar {
 		margin-right: 30px;
 		a {
-			font-size: 40px;
+			font-size: 30px;
 		}
 	}
 	.contenedor-metodos-pagos {
@@ -1130,9 +1236,9 @@ ul {
 		justify-content: center;
 		img {
 			margin-top: 100px;
-			width: 96%;
+			width: 93%;
 			border-radius: 8px;
-			height: 370px;
+			height: 380px;
 		}
 	}
 	.container-image-vistacompra {
@@ -1188,7 +1294,7 @@ ul {
 	}
 	.navbar {
 		a {
-			font-size: 30px;
+			font-size: 25px;
 		}
 	}
 	.contenedor-productos {
